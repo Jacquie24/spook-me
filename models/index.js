@@ -1,4 +1,4 @@
 module.exports = {
     Sighting: require("./sighting"),
-    User: require("/user"),
+    User: require("./user"),
 };
