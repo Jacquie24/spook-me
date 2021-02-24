@@ -6,7 +6,9 @@ router.route("/")
   .get(usersController.findAll)
   .post(usersController.create)
 
-
+//route to find a single user
+router.route("/:id")
+.get(usersController.findById)
   
 
 module.exports = router;

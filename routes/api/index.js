@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const sightingsAllRoutes = require("./sightingsAll");
+const sightingsAllRoutes = require("./sightings");
 const sightingsOneRoutes = require("./sightingsOne");
-const userAllRoutes = require("./userAll");
+const userAllRoutes = require("./user");
 const userOneRoutes = require("./userOne");
 
 // sightings routes
