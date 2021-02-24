@@ -35,4 +35,3 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   }
 };
-// 
