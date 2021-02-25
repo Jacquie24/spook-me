@@ -1,0 +1,16 @@
+.contain {
+	background-color: #5e2b4a99 !important;
+}
+
+.title,
+.subtitle {
+	text-align: center;
+    color: #ff8888;
+}
+
+.recent{
+    width: 50% !important;
+}
+
+
+
