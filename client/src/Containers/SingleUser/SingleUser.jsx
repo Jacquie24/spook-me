@@ -51,6 +51,10 @@ const SingleSighting = () => {
               <div className="column">
                 <p className="bd-notification is-info">Second nested column</p>
                 <div className="card mb-2">
+                <header class="card-header">
+                <p class="card-header-title">
+                     Card header
+                    </p
                   <div className="card-content">
                     <div className="content">
                       This is a super spooky house . Donec id elit non mi porta
