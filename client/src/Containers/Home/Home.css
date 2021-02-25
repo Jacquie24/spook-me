@@ -1,10 +1,11 @@
 .contain {
-	background-color: #88177a99 !important;
+	background-color: #5e2b4a99 !important;
 }
 
 .title,
 .subtitle {
 	text-align: center;
+    color: #ff8888;
 }
 
 .recent{
