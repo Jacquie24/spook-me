@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/NavBar/NavBar";
+import "../Home/Home.css"
 
 const Home = () => {
 	return (
@@ -16,24 +17,21 @@ const Home = () => {
 			<div class="columns">
 				<div class="column">
 					<div class="container is-fluid">
-						<div class="notification is-primary">
-							This container is <strong>fluid</strong>: it will have a 32px gap
-							on either side, on any viewport size.
+						<div class="notification is-primary contain">
+							images carousel
 						</div>
 					</div>
 				</div>
 				<div class="column">
 					<div class="container is-fluid">
-						<div class="notification is-primary">
-							This container is <strong>fluid</strong>: it will have a 32px gap
-							on either side, on any viewport size.
+						<div class="notification is-primary contain">
+							go to my user dashboard (or login page if user is not logged in)
 						</div>
 					</div>
 					<br />
 					<div class="container is-fluid">
-						<div class="notification is-primary">
-							This container is <strong>fluid</strong>: it will have a 32px gap
-							on either side, on any viewport size.
+						<div class="notification is-primary contain">
+							most recently posted spooky spot
 						</div>
 					</div>
 				</div>
@@ -44,4 +42,3 @@ const Home = () => {
 
 export default Home;
 
-<styles>#88177a99</styles>;
