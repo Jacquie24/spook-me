@@ -5,7 +5,7 @@ import "../Home/Home.css";
 
 const Home = () => {
 	return (
-		<div>
+		<div class="parent">
 			<Navbar />
 
 			<section class="section is-medium">
