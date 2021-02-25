@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
-import AddSighting from "../../components/AddSighting/AddSighting";
+import AddSighting from "../AddSighting/AddSighting";
 
 const EditSighting = () => {
     const history = useHistory();
