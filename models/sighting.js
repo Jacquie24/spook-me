@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 
 const sightingSchema = new Schema({
+    username: {
+        type: String,
+        trim: true,
+    },
     title: {
         type: String, 
         trim: true,
@@ -25,7 +29,7 @@ const sightingSchema = new Schema({
         type: String,
         trim: true,
     }, 
-    image_url: {
+    imageUrl: {
         type: String,
         trim: true,
     },
