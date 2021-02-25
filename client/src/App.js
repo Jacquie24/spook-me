@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import AddSighting from "./Containers/AddSighting/AddSighting";
+import AddSighting from "./Containers/AddSighting/AddSighting";
 // import AddUser from "./Containers/AddUser/AddUser";
 import AllSightings from "./Containers/AllSightings/AllSightings";
-// import NavBar from "./Components/NavBar";
+import NavBar from "./Components/NavBar/NavBar";
 // import AllUsers from "./Containers/AllUsers/AllUsers";
 // import EditSighting from "./Containers/EditSighting/EditSighting";
 import Home from "./Containers/Home/Home";
@@ -10,10 +10,11 @@ import SingleSighting from "./Containers/SingleSighting/SingleSighting";
 import SingleUser from "./Containers/SingleUser/SingleUser";
 
 function App() {
+
 	return (
 		<div className="App">
 			<Router>
-				{/* <NavBar /> */}
+				<NavBar />
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/sightings" component={AllSightings} />
