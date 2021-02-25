@@ -1,6 +1,5 @@
 // import React, { useEffect, useState } from 'react';
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar";
 // import { useParams } from "react-router-dom";
 // import axios from "axios";
 
@@ -11,7 +10,7 @@ import NavBar from "../../components/NavBar/NavBar";
 
 // how will i seed the data, how did jonathan get his data into his single restaurant view?  
 
-const SingleSighting = () => {
+const SingleUser = () => {
   // const [sighting, setSighting] = useState({});
   // const { id } = useParams();
   // useEffect(() => {
@@ -28,7 +27,6 @@ const SingleSighting = () => {
         backgroundImage: `url("https://wallpapertag.com/wallpaper/full/a/c/a/346463-spooky-background-1920x1080-hd-for-mobile.jpg")` 
       }}>
       
-      <NavBar />
       <div className="container">
           
         <div className="columns mt-5">

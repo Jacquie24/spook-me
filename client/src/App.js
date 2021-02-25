@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddSighting from "./Containers/AddSighting/AddSighting";
 // import AddUser from "./Containers/AddUser/AddUser";
