@@ -6,8 +6,8 @@ import AllSightings from "./Containers/AllSightings/AllSightings";
 // import AllUsers from "./Containers/AllUsers/AllUsers";
 // import EditSighting from "./Containers/EditSighting/EditSighting";
 import Home from "./Containers/Home/Home";
-// import SingleSighting from "./Containers/SingleSighting/SingleSighting";
-// import SingleUser from "./Containers/SingleUser/SingleUser";
+import SingleSighting from "./Containers/SingleSighting/SingleSighting";
+import SingleUser from "./Containers/SingleUser/SingleUser";
 
 function App() {
 	return (
@@ -18,11 +18,11 @@ function App() {
 					<Route exact path="/" component={Home} />
 					<Route exact path="/sightings" component={AllSightings} />
 					{/* <Route exact path="/sightings/new" component={AddSighting} /> */}
-					{/* <Route exact path="/sightings/:id" component={SingleSighting} /> */}
+					<Route exact path="/sightings/:id" component={SingleSighting} />
 					{/* <Route exact path="/sightings/:id/edit" component={EditSighting} /> */}
 					{/* <Route exact path="/users" component={AllUsers} /> */}
 					{/* <Route exact path="/users/new" component={AddUser} /> */}
-					{/* <Route exact path="/users/:id" component={SingleUser} /> */}
+					<Route exact path="/users/:id" component={SingleUser} /> 
 				</Switch>
 			</Router>
 		</div>

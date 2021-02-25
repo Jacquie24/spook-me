@@ -2,6 +2,12 @@
 	background-color: #88177a99 !important;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
 	text-align: center;
 }
+
+.recent{
+    width: 50% !important;
+}
+
