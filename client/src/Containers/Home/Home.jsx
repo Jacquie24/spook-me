@@ -6,8 +6,6 @@ import "../Home/Home.css";
 const Home = () => {
 	return (
 		<div>
-			<Navbar />
-
 			<section class="section is-medium">
 				<h1 class="title">Spook Me</h1>
 				<h2 class="subtitle">Don't forget your Holy Water...</h2>
