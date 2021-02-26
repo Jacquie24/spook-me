@@ -41,6 +41,10 @@ const AddUser = () => {
 									placeholder="password"
 								/>
 							</div>
+							<div className="field">
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                                <label for="vehicle1"> Are you willing to sacrifice your first born son?</label><br />
+							</div>
 
 							<div className="field is-grouped">
 								<div className="control">
@@ -52,8 +56,8 @@ const AddUser = () => {
 							</div>
 						</div>
 					</div>
-            </div>
-            <section class="section is-large"></section>
+				</div>
+				<section class="section is-large"></section>
 			</section>
 		);
 };
