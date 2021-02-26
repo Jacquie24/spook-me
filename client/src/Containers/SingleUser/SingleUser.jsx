@@ -47,9 +47,29 @@ const SingleUser = () => {
           <div className="card-content">
             <div className="content">
               This is a super spooky house 
-              {user?.sightings?.map(sighting => (
+              {/* {user?.sightings?.map(sighting => (
                   <div>sighting</div>
-              ))}
+              ))} */}
+              <table classname="table">
+        <thead className="table-head">
+          <tr>
+            <th>Picture</th>
+            <th>Title</th>
+            <th class="center-align">Image</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        {/* {{#if sightings}} */}
+        <tbody class="table-body">
+          {/* {{#each sightings}}
+          {{> sighting-list}}
+          {{/each}} */}
+        </tbody>
+      </table>
+      
             </div>
           </div>
         </div>
