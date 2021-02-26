@@ -11,7 +11,6 @@ import SingleSighting from "./Containers/SingleSighting/SingleSighting";
 import SingleUser from "./Containers/SingleUser/SingleUser";
 
 function App() {
-
 	return (
 		<div className="App">
 			<Router>
@@ -19,17 +18,16 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/sightings" component={AllSightings} />
-					{/* <Route exact path="/sightings/new" component={AddSighting} /> */}
+					<Route exact path="/sightings/new" component={AddSighting} />
 					<Route exact path="/sightings/:id" component={SingleSighting} />
-				  <Route exact path="/sightings/:id/edit" component={EditSighting} /> 
+					<Route exact path="/sightings/:id/edit" component={EditSighting} />
 					{/* <Route exact path="/users" component={AllUsers} /> */}
 					<Route exact path="/users/new" component={AddUser} />
-					<Route exact path="/users/:id" component={SingleUser} /> 
+					<Route exact path="/users/:id" component={SingleUser} />
 				</Switch>
 			</Router>
 		</div>
 	);
-
 }
 
 export default App;
