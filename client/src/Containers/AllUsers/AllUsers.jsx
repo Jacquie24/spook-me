@@ -15,6 +15,29 @@ const AllUsers = () => {
       });
   }, []);
 
-  
+  return (
+    <div className="container">
+      <div className="row">
+        {users.map((users) => (
+          <div className="col s4" key={users._id}>
+            <div className="row">
+              <div className="col s12 m7">
+                <div className="card">
+                  <div className="card-image">
+                    <img
+                      src={users.featuredImageUrl}
+                      alt={users.name}
+                    />
+                    <span className="card-title">{users.name}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default AllUsers;
