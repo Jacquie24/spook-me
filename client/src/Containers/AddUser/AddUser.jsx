@@ -85,23 +85,23 @@ const AddUser = () => {
 										placeholder="password"
 									/>
 								</div>
-								{/* <div className="field">
-									<input
-										type="checkbox"
-										id="check"
-										name="check"
-										value="Bike"
-									/>
+								<div className="field">
+									<input type="checkbox" id="check" name="check" value="Bike" />
 									<label for="check">
 										{" "}
 										Are you willing to sacrifice your first born son?
 									</label>
 									<br />
-								</div> */}
+								</div>
 
 								<div className="field is-grouped">
 									<div className="control">
-										<button className="button is-link">Submit</button>
+										<button
+											className="button is-link"
+											onClick={handleFormSubmit}
+										>
+											Submit
+										</button>
 									</div>
 									<div className="control">
 										<button className="button is-link is-light">Cancel</button>
