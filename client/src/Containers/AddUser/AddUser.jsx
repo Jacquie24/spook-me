@@ -3,25 +3,21 @@ import axios from "axios";
 import "../AddUser/AddUser.css";
 
 const AddUser = () => {
+	const [firstname, setFirstname] = useState("");
+	const [lastname, setLastname] = useState("");
 	const [username, setUsername] = useState("");
-	const [title, setTitle] = useState("");
-	const [address, setAddress] = useState("");
-	const [city, setCity] = useState("");
-	const [state, setState] = useState("");
-	const [description, setDescription] = useState("");
-	const [imageUrl, setimageUrl] = useState("");
+	const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("");
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 		axios
 			.post("/api/user", {
+				firstname,
+				lastname,
 				username,
-				title,
-				address,
-				city,
-				state,
-				description,
-				imageUrl,
+				password,
+				email,
 			})
 			.then((response) => {
 				console.log(response.data);
@@ -40,22 +36,40 @@ const AddUser = () => {
 							<div className="column is-6 is-offset-3">
 								<div className="field">
 									<div className="control">
-										<input className="input" type="text" placeholder="name" />
+										<input
+											id="firstname"
+											className="input"
+											type="text"
+											placeholder="first name"
+										/>
 									</div>
 								</div>
 
 								<div className="field">
 									<div className="control">
 										<input
+											id="lastname"
 											className="input"
 											type="text"
-											placeholder="email address"
+											placeholder="last name"
+										/>
+									</div>
+								</div>
+
+								<div className="field">
+									<div className="control">
+										<input
+											id="email"
+											className="input"
+											type="text"
+											placeholder="email"
 										/>
 									</div>
 								</div>
 
 								<div className="field">
 									<input
+										id="username"
 										className="input is-danger"
 										type="text"
 										placeholder="username"
@@ -63,6 +77,7 @@ const AddUser = () => {
 								</div>
 								<div className="field">
 									<input
+										id="password"
 										className="input is-danger"
 										type="password"
 										minlength="8"
@@ -70,19 +85,19 @@ const AddUser = () => {
 										placeholder="password"
 									/>
 								</div>
-								<div className="field">
+								{/* <div className="field">
 									<input
 										type="checkbox"
-										id="vehicle1"
-										name="vehicle1"
+										id="check"
+										name="check"
 										value="Bike"
 									/>
-									<label for="vehicle1">
+									<label for="check">
 										{" "}
 										Are you willing to sacrifice your first born son?
 									</label>
 									<br />
-								</div>
+								</div> */}
 
 								<div className="field is-grouped">
 									<div className="control">
