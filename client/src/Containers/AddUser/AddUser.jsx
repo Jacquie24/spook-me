@@ -12,7 +12,7 @@ const AddUser = () => {
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 		axios
-			.post("/api/user", {
+			.post("/api/users", {
 				firstname,
 				lastname,
 				username,
@@ -40,6 +40,8 @@ const AddUser = () => {
 											id="firstname"
 											className="input"
 											type="text"
+											value={firstname}
+											onChange={(e) => setFirstname(e.target.value)}
 											placeholder="first name"
 										/>
 									</div>
@@ -51,6 +53,8 @@ const AddUser = () => {
 											id="lastname"
 											className="input"
 											type="text"
+											value={lastname}
+											onChange={(e) => setLastname(e.target.value)}
 											placeholder="last name"
 										/>
 									</div>
@@ -62,6 +66,8 @@ const AddUser = () => {
 											id="email"
 											className="input"
 											type="text"
+											value={email}
+											onChange={(e) => setEmail(e.target.value)}
 											placeholder="email"
 										/>
 									</div>
@@ -72,6 +78,8 @@ const AddUser = () => {
 										id="username"
 										className="input is-danger"
 										type="text"
+										value={username}
+										onChange={(e) => setUsername(e.target.value)}
 										placeholder="username"
 									/>
 								</div>
@@ -82,6 +90,8 @@ const AddUser = () => {
 										type="password"
 										minlength="8"
 										required
+										value={password}
+										onChange={(e) => setPassword(e.target.value)}
 										placeholder="password"
 									/>
 								</div>
