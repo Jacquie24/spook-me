@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
+
 const AddSighting = () => {
     const [username, setUsername] = useState("");
     const [title, setTitle] = useState("");
@@ -28,11 +30,26 @@ const AddSighting = () => {
             })
     }
 
+    const showWidget = () => {
+    let widget = window.cloudinary.createUploadWidget({
+        cloudName: "dfqdc8mjr", uploadPreset: "pmekgbnz" }, 
+        (error, result) => {
+            if (!error && result && result.event === "success") { 
+                console.log(result.info.url); 
+                setimageUrl(result.info.url);
+              }});
+              widget.open()
+            }
+
     return (
         <div className="container mt-5">
             <div className="columns">
                 <div className="column is-3 is-offset-3">
                     <div className="field">
+                        <div id="photo-container">
+                            <button onClick={showWidget}>Upload Photo</button>
+                        </div>
+
                         <p className="control has-icons-left">
                             <input id="imageUrl" className="input" type="text" value={imageUrl} onChange={(e) => setimageUrl(e.target.value)} />
                             <span className="icon is-small is-left">
