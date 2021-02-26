@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddSighting from "./Containers/AddSighting/AddSighting";
-// import AddUser from "./Containers/AddUser/AddUser";
+import AddUser from "./Containers/AddUser/AddUser";
 import AllSightings from "./Containers/AllSightings/AllSightings";
 
 import NavBar from "./Components/NavBar/NavBar";
