@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../Components/NavBar/NavBar";
-import "../Home/Home.css";
+import "./Home.css";
 
 const Home = () => {
 	return (
