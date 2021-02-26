@@ -23,7 +23,7 @@ function App() {
 					<Route exact path="/sightings/:id" component={SingleSighting} />
 				  <Route exact path="/sightings/:id/edit" component={EditSighting} /> 
 					{/* <Route exact path="/users" component={AllUsers} /> */}
-					{/* <Route exact path="/users/new" component={AddUser} /> */}
+					<Route exact path="/users/new" component={AddUser} />
 					<Route exact path="/users/:id" component={SingleUser} /> 
 				</Switch>
 			</Router>
