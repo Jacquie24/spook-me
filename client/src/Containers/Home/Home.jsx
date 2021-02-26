@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import "../Home/Home.css";
+=======
+import "./Home.css";
+
+>>>>>>> dd70452c33b3aecc119cf2801faa215c572675ec
 
 const Home = () => {
 	return (
