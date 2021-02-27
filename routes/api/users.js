@@ -5,10 +5,11 @@ const usersController = require("../../controllers/usersController");
 router.route("/")
   .get(usersController.findAll)
   .post(usersController.create)
-
+// get will be findOne
+//post will be signup 
 //route to find a single user
 router.route("/:id")
 .get(usersController.findById)
-  
+  //findById will be the login 
 
 module.exports = router;

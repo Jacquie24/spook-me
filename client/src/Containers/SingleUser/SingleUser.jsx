@@ -43,30 +43,36 @@ const SingleUser = () => {
       <div className="container mb-5 mt-5">
         <div className="card mb-5 mt-5 pt-5 pb-5">
           <header className="card-header" />
-          <p className="card-header-title">User Dashboard</p>
+          <p className="card-header-title">All of your sightings</p>
           <div className="card-content">
             <div className="content">
-              This is a super spooky house 
-              {/* {user?.sightings?.map(sighting => (
-                  <div>sighting</div>
-              ))} */}
-              <table classname="table">
+              
+              <table className="table">
         <thead className="table-head">
           <tr>
-            <th>Picture</th>
+            {/* <th>Picture</th> */}
             <th>Title</th>
-            <th class="center-align">Image</th>
+            {/* <th className="center-align">Image</th> */}
             <th>City</th>
             <th>State</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
         </thead>
-        {/* {{#if sightings}} */}
-        <tbody class="table-body">
-          {/* {{#each sightings}}
-          {{> sighting-list}}
-          {{/each}} */}
+        
+        <tbody className="table-body">
+      
+        {user?.sightings?.map(sighting => (
+          <tr>
+                  <td>{sighting.title}</td>
+                  <td>{sighting.city}</td>
+                  <td>{sighting.state}</td>
+                  <td><button class="button">Edit</button></td>
+                  <td><button class="button">Delete</button></td>
+                  </tr>
+              ))}
+
+         
         </tbody>
       </table>
       

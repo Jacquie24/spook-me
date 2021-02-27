@@ -164,8 +164,7 @@ const AddSighting = () => {
                 </div>
             </div>
         </div>
-      </div>
-    </div>
+   
   );
 };
 

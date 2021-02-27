@@ -1,12 +1,13 @@
 const router = require("express").Router();
 const User = require("../../models/user");
 
-//route to get all users, or post to all users
+//route that is use to bring in a hardcoded userid and use the .populate to serve up the sightings data associated with that userID
 router.route("/")
   .get((req, res) => {
     //   const userId = req.session.user_id
-    const userId = "60391323d523d324dbf4a31a"
-User.findOne({_id: userId}).populate("sightings").then(data => {
+    const userId = "60396422725534421f4467f9"
+User.findOne({_id: userId}).select('-__v').populate("sightings").then(data => {
+  console.log(data);
     res.json(data)
 })
   })
