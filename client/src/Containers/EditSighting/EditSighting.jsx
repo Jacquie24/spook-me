@@ -22,13 +22,11 @@ const EditSighting = () => {
 
       return (
         <div className="container">
-          <div className="row">
             <AddSighting
               handleFormSubmit={handleFormSubmit}
               buttonText="Update"
             />
           </div>
-        </div>
       );
     };
 
