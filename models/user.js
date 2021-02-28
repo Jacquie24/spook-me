@@ -36,7 +36,7 @@ const UserSchema = new Schema({
     sightings: [
         {
           type: Schema.Types.ObjectId,
-          ref: "Sighting"
+          ref: "Sightings"
         }
       ],
     

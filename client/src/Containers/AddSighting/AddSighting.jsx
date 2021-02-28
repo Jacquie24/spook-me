@@ -164,7 +164,8 @@ const AddSighting = () => {
                 </div>
             </div>
         </div>
-    );
+   
+  );
 };
 
 export default AddSighting;
