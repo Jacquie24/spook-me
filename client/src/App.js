@@ -9,6 +9,7 @@ import EditSighting from "./Containers/EditSighting/EditSighting";
 import Home from "./Containers/Home/Home";
 import SingleSighting from "./Containers/SingleSighting/SingleSighting";
 import SingleUser from "./Containers/SingleUser/SingleUser";
+import "./App.css";
 
 function App() {
 	return (
