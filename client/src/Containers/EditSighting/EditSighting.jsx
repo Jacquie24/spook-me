@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
-import AddSighting from "../AddSighting/AddSighting";
+import SightingsForm from "../../Components/SightingsForm/SightingsForm";
+
 
 const EditSighting = () => {
     const history = useHistory();
@@ -22,10 +23,11 @@ const EditSighting = () => {
 
       return (
         <div className="container">
-            <AddSighting
+          <SightingsForm
               handleFormSubmit={handleFormSubmit}
               buttonText="Update"
-            />
+              />
+
           </div>
       );
     };
