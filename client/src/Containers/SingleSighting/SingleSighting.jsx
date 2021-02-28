@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+// import "./SingleSighting.css";
 
 //what will the single sighting container require:
 //take in the user id and display it to the page, it will use the params to pull the id from the url and use that to show the information.
@@ -24,12 +25,16 @@ const SingleSighting = () => {
   //id
 
   return (
-    <div
-      style={{
-        backgroundImage: `url("https://wallpapertag.com/wallpaper/full/a/c/a/346463-spooky-background-1920x1080-hd-for-mobile.jpg")`,
-      }}
-    >
-      <div className="container">
+    <div className="container">
+<section className="hero is-fullheight">
+      {/* style={{ */}
+      {/* //   backgroundImage: "url('https://wallpapertag.com/wallpaper/full/a/c/a/346463-spooky-background-1920x1080-hd-for-mobile.jpg')",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      //   height: "100%"
+      // }} */}
+
+
         <div className="columns mt-5">
           <div className="column">
             <div className="columns is-mobile">
@@ -68,8 +73,9 @@ const SingleSighting = () => {
             </div>
           </div>
         </div>
+        </section>
       </div>
-    </div>
+
   );
 };
 
