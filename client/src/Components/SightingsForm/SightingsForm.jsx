@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
-const SightingsForm = ({ handleFormSubmit }) => {
+const SightingsForm = (props) => {
+  const { id } = useParams();
+
   const [username, setUsername] = useState("");
   const [title, setTitle] = useState("");
   const [address, setAddress] = useState("");
@@ -8,6 +12,26 @@ const SightingsForm = ({ handleFormSubmit }) => {
   const [state, setState] = useState("");
   const [description, setDescription] = useState("");
   const [imageUrl, setimageUrl] = useState("");
+
+  useEffect(() => {
+    if (id) {
+      axios
+        .get(`/api/sightings/${id}`)
+        .then((response) => {
+          console.log(response.data);
+          setUsername(response.data.username);
+          setTitle(response.data.title);
+          setAddress(response.data.address);
+          setCity(response.data.city);
+          setState(response.data.state);
+          setDescription(response.data.description);
+          setimageUrl(response.data.imageUrl);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [id]);
 
   const showWidget = () => {
     let widget = window.cloudinary.createUploadWidget(
@@ -148,7 +172,7 @@ const SightingsForm = ({ handleFormSubmit }) => {
               <button
                 className="button is-link"
                 onClick={(e) => {
-                  handleFormSubmit(e, {
+                  props.handleFormSubmit(e, {
                     username,
                     title,
                     address,
@@ -159,11 +183,8 @@ const SightingsForm = ({ handleFormSubmit }) => {
                   });
                 }}
               >
-                Submit
+                {props.buttonText}
               </button>
-            </div>
-            <div className="control">
-              <button className="button is-link is-light">Cancel</button>
             </div>
           </div>
         </div>
