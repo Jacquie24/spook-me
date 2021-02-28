@@ -48,6 +48,6 @@ const sightingSchema = new Schema({
 
 });
 
-const Sighting = mongoose.model("Sighting", sightingSchema);
+const Sighting = mongoose.model("Sightings", sightingSchema);
 
 module.exports = Sighting;
