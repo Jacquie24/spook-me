@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
 // import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -12,16 +12,19 @@ import axios from "axios";
 const SingleUser = () => {
   const history = useHistory();
   const [user, setUser] = useState({});
-  //   const { id } = useParams();
+    const { id: userId } = useParams();
+
   useEffect(() => {
     axios
-      .get(`/api/users`)
+      .get(`/api/users/${userId}`)
       .then((response) => {
-        console.log(response.data);
+        console.log(response);
         setUser(response.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [userId]);
+
+  
 
   const handleDeleteClick = (id) => {
     axios
