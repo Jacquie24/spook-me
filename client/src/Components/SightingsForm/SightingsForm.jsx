@@ -55,7 +55,6 @@ const SightingsForm = (props) => {
 			<div className="columns">
 				<div className="column is-6 is-offset-3">
 					<div className="field">
-						
 						<div className="control">
 							<input
 								id="username"
@@ -91,8 +90,6 @@ const SightingsForm = (props) => {
 							onChange={(e) => setAddress(e.target.value)}
 						/>
 					</div>
-
-					
 
 					<div className="field is-grouped">
 						<input
@@ -135,10 +132,6 @@ const SightingsForm = (props) => {
 					<div className="columns">
 						<div className="column is-3 is-offset-3">
 							<div className="field upload">
-								<div id="photo-container">
-									<button onClick={showWidget}>Upload Image</button>
-								</div>
-
 								<p className="control has-icons-left">
 									<input
 										id="imageUrl"
@@ -150,9 +143,12 @@ const SightingsForm = (props) => {
 									<span className="icon is-small is-left">
 										<i className="fa fa-camera"></i>
 									</span>
-								</p>
+							  </p>
+							  
+								<div id="photo-container">
+									<button onClick={showWidget}>Upload Image</button>
+								</div>
 							</div>
-							
 						</div>
 					</div>
 

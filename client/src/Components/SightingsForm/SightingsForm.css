@@ -1,28 +1,31 @@
-
-.input, .select select, .textarea{
-    background-color: #5e2b4a99 !important;
-    border-color: unset !important;
-    color:  #ff8888;
+.input,
+.select select,
+.textarea {
+	background-color: #5e2b4a99 !important;
+	border-color: unset !important;
+	color: #ff8888;
 }
 
 textarea.textarea {
-    color: #ff8888;
+	color: #ff8888;
 }
 
-.input::-webkit-input-placeholder { 
-  color: #ff8888;
+.input::-webkit-input-placeholder {
+	color: #ff8888;
 }
 
-.select select::-webkit-input-placeholder { 
-  color: #ff8888;
+.select select::-webkit-input-placeholder {
+	color: #ff8888;
 }
 
 .textarea::-webkit-input-placeholder {
-  color: #ff8888;
+	color: #ff8888;
 }
 
 .field.upload {
-    display: -webkit-inline-box;
+	display: -webkit-inline-box;
 }
 
-
+div#photo-container {
+	margin: 14px;
+}
