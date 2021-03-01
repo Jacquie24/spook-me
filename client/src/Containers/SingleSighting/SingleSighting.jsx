@@ -61,7 +61,7 @@ const SingleSighting = () => {
                 <div className="card">
                   <div className="card-content">
                     <div className="content">
-                      {sighting.adress} <br></br>
+                      {sighting.address} <br></br>
                       {sighting.city} <br></br>
                       {sighting.state} <br></br>
                       Google maps will probably go here.

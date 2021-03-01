@@ -13,19 +13,26 @@ module.exports = {
 			.then((dbModel) => res.json(dbModel))
 			.catch((err) => res.status(422).json(err));
 	},
+
 	create: function (req, res) {
 		db.Sighting.create(req.body)
-			.then((dbModel) => {
-				console.log(dbModel)
-				db.User.findOneAndUpdate({
-					_id: "60396422725534421f4467f9"//req.sessions.userId
-				},{$addToSet:{sightings:dbModel._id}}).then(data=>{
-					console.log(data)
-					res.json(dbModel)
-				}).catch((err) => res.status(422).json(err));
-			})
+			.then((dbModel) => res.json(dbModel))
 			.catch((err) => res.status(422).json(err));
 	},
+	
+	// create: function (req, res) {
+	// 	db.Sighting.create(req.body)
+	// 		.then((dbModel) => {
+	// 			console.log(dbModel)
+	// 			db.User.findOneAndUpdate({
+	// 				_id: "603c0e5cd7c0193e94d045e8"//req.sessions.userId
+	// 			},{$addToSet:{sightings:dbModel._id}}).then(data=>{
+	// 				console.log(data)
+	// 				res.json(dbModel)
+	// 			}).catch((err) => res.status(422).json(err));
+	// 		})
+	// 		.catch((err) => res.status(422).json(err));
+	// },
 	update: function (req, res) {
 		db.Sighting.findOneAndUpdate({ _id: req.params.id }, req.body, {new: true})
 			.then((dbModel) => res.json(dbModel))
