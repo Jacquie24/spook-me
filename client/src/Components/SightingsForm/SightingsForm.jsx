@@ -134,7 +134,7 @@ const SightingsForm = (props) => {
 
 					<div className="columns">
 						<div className="column is-3 is-offset-3">
-							<div className="field">
+							<div className="field upload">
 								<div id="photo-container">
 									<button onClick={showWidget}>Upload Photo</button>
 								</div>
