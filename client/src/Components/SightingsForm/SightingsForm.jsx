@@ -136,7 +136,7 @@ const SightingsForm = (props) => {
 						<div className="column is-3 is-offset-3">
 							<div className="field upload">
 								<div id="photo-container">
-									<button onClick={showWidget}>Upload Photo</button>
+									<button onClick={showWidget}>Upload Image</button>
 								</div>
 
 								<p className="control has-icons-left">
@@ -152,12 +152,7 @@ const SightingsForm = (props) => {
 									</span>
 								</p>
 							</div>
-							<span className="icon-text">
-								<span className="icon">
-									<i className="fa fa-camera"></i>
-								</span>
-								<span>Upload image</span>
-							</span>
+							
 						</div>
 					</div>
 
