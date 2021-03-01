@@ -5,3 +5,29 @@
 h1{
     color: white;
 }
+
+.contain{
+   background-color: unset !important;
+}
+
+.input, .select select, .textarea{
+    background-color: #5e2b4a99 !important;
+    border-color: unset !important;
+    color: #FFB997;
+}
+
+textarea.textarea {
+    color: #FFB997;
+}
+
+.input::-webkit-input-placeholder { 
+  color: #FFB997;
+}
+
+.select select::-webkit-input-placeholder { 
+  color: #FFB997;
+}
+
+.textarea::-webkit-input-placeholder {
+  color: #FFB997;
+}
