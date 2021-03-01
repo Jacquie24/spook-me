@@ -29,3 +29,14 @@ textarea.textarea {
 div#photo-container {
 	margin: 14px;
 }
+
+.button.is-link {
+    background-color: #843B62;
+    border-color: transparent;
+    color: #F67E7D;
+}
+
+button.button.is-link:hover{
+  background-color: #0B032D;
+  color: #843B62;
+}
