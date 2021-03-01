@@ -12,21 +12,21 @@ h1{
 
 .input, .select select, .textarea{
     background-color: #5e2b4a99 !important;
-    color:  #ff8888;
+    color:  #F67E7D;
 }
 
 textarea.textarea {
-    color:  #ff8888;
+    color:  #F67E7D;
 }
 
 .input::-webkit-input-placeholder { 
-  color:  #ff8888;
+  color:  #F67E7D;
 }
 
 .select select::-webkit-input-placeholder { 
-  color: #FFB997;
+  color: #F67E7D;
 }
 
 .textarea::-webkit-input-placeholder {
-  color: #FFB997;
+  color: #F67E7D;
 }
