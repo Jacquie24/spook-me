@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./AddUser.css";
+import { useHistory } from "react-router-dom";
+
 
 const AddUser = () => {
+
+	const history = useHistory();
+
 	const [firstName, setFirstname] = useState("");
 	const [lastName, setLastname] = useState("");
 	const [username, setUsername] = useState("");
@@ -23,6 +28,7 @@ const AddUser = () => {
 			.then(response => {
 				sessionStorage.setItem("userId", response.data._id)
 				console.log(response.data);
+				history.push("/login");
 			})
 			.catch(err => {
 				console.log(err);

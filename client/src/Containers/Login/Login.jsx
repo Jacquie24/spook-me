@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
+
+    const history = useHistory();
 
     const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
@@ -18,6 +20,7 @@ const Login = () => {
 			})
 			.then(response => {
                 console.log(response.data);
+                history.push(`/users/${response.data._id}`);
 
 			})
 			.catch(err => {
