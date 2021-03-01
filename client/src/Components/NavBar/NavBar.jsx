@@ -33,8 +33,9 @@ const NavBar = () => {
           <Link className="navbar-item" to="/sightings">
             View All
           </Link>
-
-		  <Link className="navbar-item" to="/">
+		</div>
+		<div>
+		  <Link className="navbar-item spooky" to="/">
           SpookMe
         </Link>
         </div>
