@@ -1,9 +1,13 @@
 .navbar {
     background-color: #5e2b4a99 !important;
-    color: #ff8888;
-    text-shadow: 3px 2px black;
+
 }
 
 .navbar-item {
     color: #ff8888;
+    filter: drop-shadow(4px 4px 2px #0B032D);
+}
+
+.button {
+    background-color: ;
 }

@@ -6,9 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link className="navbar-item" to="/">
-          SpookMe
-        </Link>
+        
 
         <button
           className="navbar-burger"
@@ -35,13 +33,17 @@ const NavBar = () => {
           <Link className="navbar-item" to="/sightings">
             View All
           </Link>
+
+		  <Link className="navbar-item" to="/">
+          SpookMe
+        </Link>
         </div>
 
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <button className="button is-primary">Log In</button>
-              <Link className="button is-light" to="/users/new">
+              <button className="button">Log In</button>
+              <Link className="button" to="/users/new">
                 Sign Up
               </Link>
             </div>
