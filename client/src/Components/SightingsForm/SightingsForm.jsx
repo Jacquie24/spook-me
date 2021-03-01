@@ -51,7 +51,7 @@ const SightingsForm = (props) => {
   };
 
   return (
-		<div class="container">
+		<div className="container">
 			<div className="columns">
 				<div className="column is-6 is-offset-3">
 					<div className="field">

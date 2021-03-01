@@ -28,7 +28,7 @@ module.exports = {
 			{ new: true }
 		  ).then((updatedUser) => {
 			  console.log(updatedUser);
-			res.json(updatedUser);
+			res.json(newSighting);
 		  });
 		});
 	  },
