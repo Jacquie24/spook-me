@@ -20,7 +20,7 @@ const AllSightings = () => {
 	return (
 		<div>
 			<div className="container">
-				<section class="section is-small">
+				<section className="section is-small">
 					<h1 className="page-title">All The Spooks...</h1>
 				</section>
 				<Wrapper>
@@ -55,7 +55,7 @@ const AllSightings = () => {
 				{/* </div> */}
 				</Wrapper>
 			</div>
-			<section class="section is-medium"></section>
+			{/* <section class="section is-medium"></section> */}
 		</div>
 	);
 };
