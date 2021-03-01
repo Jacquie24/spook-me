@@ -1,14 +1,3 @@
-.label {
-    color: white;
-}
-
-h1{
-    color: white;
-}
-
-.contain{
-   background-color: unset !important;
-}
 
 .input, .select select, .textarea{
     background-color: #5e2b4a99 !important;
@@ -17,17 +6,19 @@ h1{
 }
 
 textarea.textarea {
-    color:  #ff8888;
+    color: #ff8888;
 }
 
 .input::-webkit-input-placeholder { 
-  color:  #ff8888;
+  color: #ff8888;
 }
 
 .select select::-webkit-input-placeholder { 
-  color: #FFB997;
+  color: #ff8888;
 }
 
 .textarea::-webkit-input-placeholder {
-  color: #FFB997;
+  color: #ff8888;
 }
+
+

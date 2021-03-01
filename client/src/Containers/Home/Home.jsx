@@ -25,7 +25,7 @@ const Home = () => {
 				</div>
 				<div class="column">
 					<div class="container is-fluid">
-						<div class="notification is-primary contain">
+						<div class="notification is-primary sight">
 							<div className="card">
 								<div className="card-image">
 									<figure className="image is-4by3">
