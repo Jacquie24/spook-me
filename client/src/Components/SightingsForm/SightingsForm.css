@@ -2,24 +2,28 @@
 .select select,
 .textarea {
 	background-color: #5e2b4a99 !important;
-	border-color: unset !important;
 	color: #ff8888;
+  border-color: transparent !important;
 }
 
 textarea.textarea {
 	color: #ff8888;
+  border-color: transparent !important;
 }
 
 .input::-webkit-input-placeholder {
 	color: #ff8888;
+  border-color: transparent !important;
 }
 
 .select select::-webkit-input-placeholder {
 	color: #ff8888;
+  border-color: transparent !important;
 }
 
 .textarea::-webkit-input-placeholder {
 	color: #ff8888;
+  border-color: transparent !important;
 }
 
 .field.upload {
@@ -37,6 +41,18 @@ div#photo-container {
 }
 
 button.button.is-link:hover{
+  background-color: #0B032D;
+  color: #843B62;
+}
+
+.photo-container {
+    background-color: #843B62;
+    border-color: transparent;
+    color: #F67E7D;
+    margin: 0px 13px 13px 13px;
+}
+
+photo-container:hover{
   background-color: #0B032D;
   color: #843B62;
 }

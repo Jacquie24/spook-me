@@ -146,7 +146,7 @@ const SightingsForm = (props) => {
 							  </p>
 							  
 								<div id="photo-container">
-									<button onClick={showWidget}>Upload Image</button>
+									<button class="button is-link"onClick={showWidget}>Upload Image</button>
 								</div>
 							</div>
 						</div>
