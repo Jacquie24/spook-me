@@ -21,4 +21,8 @@ textarea.textarea {
   color: #ff8888;
 }
 
+.field.upload {
+    display: -webkit-inline-box;
+}
+
 

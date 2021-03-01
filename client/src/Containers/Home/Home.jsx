@@ -6,26 +6,26 @@ import "./Home.css";
 const Home = () => {
 	return (
 		<div>
-			<section class="section is-medium">
-				<h1 class="title">Spook Me</h1>
-				<h2 class="subtitle">Don't forget your Holy Water...</h2>
+			<section className="section is-medium">
+				<h1 className="title">Spook Me</h1>
+				<h2 className="subtitle">Don't forget your Holy Water...</h2>
 			</section>
 
-			<div class="columns">
-				<div class="column">
-					<div class="container is-fluid">
-						<div class="notification is-primary contain">images carousel</div>
+			<div className="columns">
+				<div className="column">
+					<div className="container is-fluid">
+						<div className="notification is-primary contain">images carousel</div>
 					</div>
 					<br />
-					<div class="container is-fluid">
-						<div class="notification is-primary contain">
+					<div className="container is-fluid">
+						<div className="notification is-primary contain">
 							<Link to="/users/:id">My Spooky Dashboard!</Link>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="container is-fluid">
-						<div class="notification is-primary sight">
+				<div className="column">
+					<div className="container is-fluid">
+						<div className="notification is-primary sight">
 							<div className="card">
 								<div className="card-image">
 									<figure className="image is-4by3">
