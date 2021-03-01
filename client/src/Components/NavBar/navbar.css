@@ -1,7 +1,10 @@
 .navbar {
     background-color: #5e2b4a99 !important;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
-.button {
-    color: blue;
+
+.navbar-item {
+    color: red;
 }
