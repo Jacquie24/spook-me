@@ -3,55 +3,53 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const NavBar = () => {
-	return (
-		<nav className="navbar" role="navigation" aria-label="main navigation">
-			<div className="navbar-brand">
-				<a className="navbar-item">
-					<Link to="/">SpookMe</Link>
-				</a>
+  return (
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link className="navbar-item" to="/">
+          SpookMe
+        </Link>
 
-				<a
-					role="button"
-					className="navbar-burger"
-					aria-label="menu"
-					aria-expanded="false"
-					data-target="navbarBasicExample"
-				>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
+        <button
+          className="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
 
-			<div id="navbarBasicExample" className="navbar-menu">
-				<div className="navbar-start">
-					<a className="navbar-item">
-						<Link to="/">Home</Link>
-					</a>
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-start">
+          <Link className="navbar-item" to="/">
+            Home
+          </Link>
 
-					<a className="navbar-item">
-						<Link to="/sightings/new">Add New</Link>
-					</a>
+          <Link className="navbar-item" to="/sightings/new">
+            Add New
+          </Link>
 
-					<a className="navbar-item">
-						<Link to="/sightings">View All</Link>
-					</a>
-				</div>
+          <Link className="navbar-item" to="/sightings">
+            View All
+          </Link>
+        </div>
 
-				<div className="navbar-end">
-					<div className="navbar-item">
-						<div className="buttons">
-							<a className="button is-primary">Log In</a>
-							<a className="button is-light">
-								<Link to="/users/new">Sign Up</Link>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	);
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <div className="buttons">
+              <button className="button is-primary">Log In</button>
+              <Link className="button is-light" to="/users/new">
+                Sign Up
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default NavBar;
-
