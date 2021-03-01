@@ -7,8 +7,9 @@ const AddSighting = () => {
 
   const handleFormSubmit = (e, formObject) => {
     e.preventDefault();
+    const id = sessionStorage.getItem("userId")
     axios
-      .post("/api/sightings", formObject)
+      .post("/api/sightings/" + id, formObject)
       .then((response) => {
         console.log(response.data);
         history.push(`/sightings/${response.data._id}`);

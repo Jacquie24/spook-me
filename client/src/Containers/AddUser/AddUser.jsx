@@ -21,6 +21,7 @@ const AddUser = () => {
 				email,
 			})
 			.then(response => {
+				sessionStorage.setItem("userId", response.data._id)
 				console.log(response.data);
 			})
 			.catch(err => {
