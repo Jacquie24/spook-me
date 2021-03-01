@@ -31,8 +31,6 @@ const AllUsers = () => {
                     />
                     <span className="card-title">{users.name}</span>
                   </div>
-                  <div className="card-content">
-                    <p>{users.address}</p>
                   </div>
                   <div className="card-action">
                     <Link to={`/users/${users._id}`}>Order Now</Link>
