@@ -48,7 +48,7 @@ const SingleUser = () => {
           <p className="card-header-title">User Dashboard</p>
           <div className="card-content">
             <div className="content">
-              {user.userName + " " + user.lastName}
+              {user.username}
               {}
             </div>
           </div>
