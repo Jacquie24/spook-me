@@ -20,7 +20,7 @@ const AllSightings = () => {
 		<div>
 			<div className="container">
 				<section class="section is-small">
-					<h1 className="title">All The Spooks...</h1>
+					<h1 className="page-title">All The Spooks...</h1>
 				</section>
 				<div className="columns mt-5 is-multiline">
 					{sightings.map((sighting) => (
