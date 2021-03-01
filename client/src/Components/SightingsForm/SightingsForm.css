@@ -45,14 +45,14 @@ button.button.is-link:hover{
   color: #843B62;
 }
 
-.photo-container {
+#photo-container {
     background-color: #843B62;
     border-color: transparent;
     color: #F67E7D;
-    margin: 0px 13px 13px 13px;
+    margin: 0px 13px 13px 13px !important;
 }
 
-photo-container:hover{
+#photo-container:hover{
   background-color: #0B032D;
   color: #843B62;
 }

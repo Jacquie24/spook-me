@@ -12,7 +12,6 @@ h1{
 
 .input, .select select, .textarea{
     background-color: #5e2b4a99 !important;
-    border-color: unset !important;
     color:  #ff8888;
 }
 
