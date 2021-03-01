@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./AllSightings.css";
+import Wrapper from "../../Components/Wrapper/Wrapper";
 
 const AllSightings = () => {
 	const [sightings, setSightings] = useState([]);
@@ -19,12 +20,13 @@ const AllSightings = () => {
 	return (
 		<div>
 			<div className="container">
-				<section class="section is-small">
+				<section className="section is-small">
 					<h1 className="page-title">All The Spooks...</h1>
 				</section>
-				<div className="columns mt-5 is-multiline">
+				<Wrapper>
+				{/* <div className="columns mt-5 is-multiline"> */}
 					{sightings.map((sighting) => (
-						<div className="column is-one-fourth sight" key={sighting._id}>
+						<div className="column is-one-fifth" key={sighting._id}>
 							<div className="card">
 								<div className="card-image">
 									<figure className="image is-4by3">
@@ -48,10 +50,12 @@ const AllSightings = () => {
 								</div>
 							</div>
 						</div>
+
 					))}
-				</div>
+				{/* </div> */}
+				</Wrapper>
 			</div>
-			<section class="section is-medium"></section>
+			{/* <section class="section is-medium"></section> */}
 		</div>
 	);
 };
