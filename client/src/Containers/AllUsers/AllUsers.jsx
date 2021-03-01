@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const AllUsers = () => {
   const [users, setUsers] = useState([]);
@@ -29,6 +30,12 @@ const AllUsers = () => {
                       alt={users.name}
                     />
                     <span className="card-title">{users.name}</span>
+                  </div>
+                  <div className="card-content">
+                    <p>{users.address}</p>
+                  </div>
+                  <div className="card-action">
+                    <Link to={`/users/${users._id}`}>Order Now</Link>
                   </div>
                 </div>
               </div>
