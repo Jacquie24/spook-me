@@ -19,6 +19,9 @@ const AllSightings = () => {
 	return (
 		<div>
 			<div className="container">
+				<section class="section is-small">
+					<h1 className="page-title">All The Spooks...</h1>
+				</section>
 				<div className="columns mt-5 is-multiline">
 					{sightings.map((sighting) => (
 						<div className="column is-one-fifth sight" key={sighting._id}>
