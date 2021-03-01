@@ -14,12 +14,39 @@ module.exports = {
 			.catch((err) => res.status(422).json(err));
 	},
 
-	create: function (req, res) {
-		db.Sighting.create(req.body)
-			.then((dbModel) => res.json(dbModel))
-			.catch((err) => res.status(422).json(err));
-	},
+	// create: function (req, res) {
+	// 	db.Sighting.create(req.body)
+	// 		.then((dbModel) => res.json(dbModel))
+	// 		.catch((err) => res.status(422).json(err));
+	// },
 	
+	create: function (req, res) {
+		db.Sighting.create(req.body).then((newSighting) => {
+		  db.User.findByIdAndUpdate(
+			req.params.id,
+			{ $push: { sightings: newSighting._id } },
+			{ new: true }
+		  ).then((updatedUser) => {
+			  console.log(updatedUser);
+			res.json(updatedUser);
+		  });
+		});
+	  },
+
+	//   createMenuItem: function (req, res) {
+	// 	db.MenuItem.create(req.body).then((newMenuItem) => {
+	// 	  db.Restaurant.findByIdAndUpdate(
+	// 		req.params.id,
+	// 		{ $push: { menuItems: newMenuItem._id } },
+	// 		{ new: true }
+	// 	  ).then((updatedRestaurant) => {
+	// 		res.json(updatedRestaurant);
+	// 	  });
+	// 	});
+	//   },
+
+
+
 	// create: function (req, res) {
 	// 	db.Sighting.create(req.body)
 	// 		.then((dbModel) => {
