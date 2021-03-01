@@ -146,13 +146,13 @@ const SightingsForm = (props) => {
 							  </p>
 							  
 								<div id="photo-container">
-									<button class="button is-link"onClick={showWidget}>Upload Image</button>
+									<button class="button is-link" onClick={showWidget}>Upload Image</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="field is-grouped">
+					<div className="field is-grouped subBtn">
 						<div className="control">
 							<button
 								className="button is-link"

@@ -2,27 +2,27 @@
 .select select,
 .textarea {
 	background-color: #5e2b4a99 !important;
-	color: #ff8888;
+	color: #F67E7D;
   border-color: transparent !important;
 }
 
 textarea.textarea {
-	color: #ff8888;
+	color: #F67E7D;
   border-color: transparent !important;
 }
 
 .input::-webkit-input-placeholder {
-	color: #ff8888;
+	color: #F67E7D;
   border-color: transparent !important;
 }
 
 .select select::-webkit-input-placeholder {
-	color: #ff8888;
+	color: #F67E7D;
   border-color: transparent !important;
 }
 
 .textarea::-webkit-input-placeholder {
-	color: #ff8888;
+	color: #F67E7D;
   border-color: transparent !important;
 }
 
@@ -38,6 +38,7 @@ div#photo-container {
     background-color: #843B62;
     border-color: transparent;
     color: #F67E7D;
+   
 }
 
 button.button.is-link:hover{
@@ -50,9 +51,22 @@ button.button.is-link:hover{
     border-color: transparent;
     color: #F67E7D;
     margin: 0px 13px 13px 13px !important;
+    border-radius: 5rem;
 }
 
 #photo-container:hover{
   background-color: #0B032D;
   color: #843B62;
 }
+
+
+.column.is-3.is-offset-3 {
+    margin-left: 0px;
+}
+
+.field.is-grouped.subBtn {
+    margin: 12px 0px 0px 266px;
+       border-radius: 5rem !important;
+}
+
+
