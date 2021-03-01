@@ -101,7 +101,7 @@ const SightingsForm = (props) => {
 						/>
 
 						<div className="control">
-							<div className="select">
+							<div className="select state">
 								<select
 									value={state}
 									onChange={(e) => setState(e.target.value)}
@@ -143,33 +143,34 @@ const SightingsForm = (props) => {
 									<span className="icon is-small is-left">
 										<i className="fa fa-camera"></i>
 									</span>
-							  </p>
-							  
+								</p>
+
 								<div id="photo-container">
-									<button class="button is-link" onClick={showWidget}>Upload Image</button>
+									<button class="button is-link" onClick={showWidget}>
+										Upload Image
+									</button>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div className="field is-grouped subBtn">
-						<div className="control">
-							<button
-								className="button is-link"
-								onClick={(e) => {
-									props.handleFormSubmit(e, {
-										username,
-										title,
-										address,
-										city,
-										state,
-										description,
-										imageUrl,
-									});
-								}}
-							>
-								{props.buttonText}
-							</button>
+						<div className="column field is-grouped subBtn">
+							<div className="control">
+								<button
+									className="button is-link"
+									onClick={(e) => {
+										props.handleFormSubmit(e, {
+											username,
+											title,
+											address,
+											city,
+											state,
+											description,
+											imageUrl,
+										});
+									}}
+								>
+									{props.buttonText}
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
