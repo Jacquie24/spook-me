@@ -38,7 +38,7 @@ const AllUsers = () => {
                 </div>
               </div>
             </div>
-          </div>
+            
         ))}
       </div>
     </div>
