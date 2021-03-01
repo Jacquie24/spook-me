@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import "./SightingsForm.css"
 
 const SightingsForm = (props) => {
   const { id } = useParams();
@@ -50,147 +51,140 @@ const SightingsForm = (props) => {
   };
 
   return (
-    <div>
-      <div className="columns">
-        <div className="column is-3 is-offset-3">
-          <div className="field">
-            <div id="photo-container">
-              <button onClick={showWidget}>Upload Photo</button>
-            </div>
+		<div class="container">
+			<div className="columns">
+				<div className="column is-6 is-offset-3">
+					<div className="field">
+						
+						<div className="control">
+							<input
+								id="username"
+								className="input"
+								type="text"
+								placeholder="Username"
+								value={username}
+								onChange={(e) => setUsername(e.target.value)}
+							/>
+						</div>
+					</div>
 
-            <p className="control has-icons-left">
-              <input
-                id="imageUrl"
-                className="input"
-                type="text"
-                value={imageUrl}
-                onChange={(e) => setimageUrl(e.target.value)}
-              />
-              <span className="icon is-small is-left">
-                <i className="fa fa-camera"></i>
-              </span>
-            </p>
-          </div>
-          <span className="icon-text">
-            <span className="icon">
-              <i className="fa fa-camera"></i>
-            </span>
-            <span>Upload image</span>
-          </span>
-        </div>
-      </div>
-      <div className="columns">
-        <div className="column is-6 is-offset-3">
-          <div className="field">
-            <label className="label">Username</label>
-            <div className="control">
-              <input
-                id="username"
-                className="input"
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </div>
-          </div>
+					<div className="field">
+						<div className="control">
+							<input
+								id="title"
+								className="input"
+								type="text"
+								placeholder="Sighting name"
+								value={title}
+								onChange={(e) => setTitle(e.target.value)}
+							/>
+						</div>
+					</div>
 
-          <div className="field">
-            <label className="label">Title</label>
-            <div className="control">
-              <input
-                id="title"
-                className="input"
-                type="text"
-                placeholder="Sighting name"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
-            </div>
-          </div>
+					<div className="field">
+						<input
+							id="address"
+							className="input"
+							type="text"
+							placeholder="Street address"
+							value={address}
+							onChange={(e) => setAddress(e.target.value)}
+						/>
+					</div>
 
-          <div className="field">
-            <label className="label">Address</label>
-            <input
-              id="address"
-              className="input is-danger"
-              type="text"
-              placeholder="Street address"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-            />
-          </div>
+					
 
-          <div className="field is-grouped">
-            <p className="control is-expanded">
-              <label className="label">City</label>
-            </p>
-            <label className="label">State</label>
-          </div>
+					<div className="field is-grouped">
+						<input
+							className="input"
+							type="text"
+							placeholder="City"
+							value={city}
+							onChange={(e) => setCity(e.target.value)}
+						/>
 
-          <div className="field is-grouped">
-            <input
-              className="input is-danger"
-              type="text"
-              placeholder="City"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
-            />
+						<div className="control">
+							<div className="select">
+								<select
+									value={state}
+									onChange={(e) => setState(e.target.value)}
+								>
+									<option>Select State</option>
+									<option>AL</option>
+									<option>AK</option>
+									<option>AZ</option>
+									<option>GA</option>
+									<option>NC</option>
+									<option>SC</option>
+								</select>
+							</div>
+						</div>
+					</div>
 
-            <div className="control">
-              <div className="select">
-                <select
-                  value={state}
-                  onChange={(e) => setState(e.target.value)}
-                >
-                  <option>Select dropdown</option>
-                  <option>AL</option>
-                  <option>AK</option>
-                  <option>AZ</option>
-                  <option>GA</option>
-                  <option>NC</option>
-                  <option>SC</option>
-                </select>
-              </div>
-            </div>
-          </div>
+					<div className="field">
+						<div className="control">
+							<textarea
+								className="textarea"
+								placeholder="Description"
+								value={description}
+								onChange={(e) => setDescription(e.target.value)}
+							></textarea>
+						</div>
+					</div>
 
-          <div className="field">
-            <label className="label">Description</label>
-            <div className="control">
-              <textarea
-                className="textarea"
-                placeholder="Description"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              ></textarea>
-            </div>
-          </div>
+					<div className="columns">
+						<div className="column is-3 is-offset-3">
+							<div className="field">
+								<div id="photo-container">
+									<button onClick={showWidget}>Upload Photo</button>
+								</div>
 
-          <div className="field is-grouped">
-            <div className="control">
-              <button
-                className="button is-link"
-                onClick={(e) => {
-                  props.handleFormSubmit(e, {
-                    username,
-                    title,
-                    address,
-                    city,
-                    state,
-                    description,
-                    imageUrl,
-                  });
-                }}
-              >
-                {props.buttonText}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+								<p className="control has-icons-left">
+									<input
+										id="imageUrl"
+										className="input"
+										type="text"
+										value={imageUrl}
+										onChange={(e) => setimageUrl(e.target.value)}
+									/>
+									<span className="icon is-small is-left">
+										<i className="fa fa-camera"></i>
+									</span>
+								</p>
+							</div>
+							<span className="icon-text">
+								<span className="icon">
+									<i className="fa fa-camera"></i>
+								</span>
+								<span>Upload image</span>
+							</span>
+						</div>
+					</div>
+
+					<div className="field is-grouped">
+						<div className="control">
+							<button
+								className="button is-link"
+								onClick={(e) => {
+									props.handleFormSubmit(e, {
+										username,
+										title,
+										address,
+										city,
+										state,
+										description,
+										imageUrl,
+									});
+								}}
+							>
+								{props.buttonText}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default SightingsForm;
