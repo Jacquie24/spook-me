@@ -2,23 +2,23 @@
 .input, .select select, .textarea{
     background-color: #5e2b4a99 !important;
     border-color: unset !important;
-    color: #FFB997;
+    color:  #ff8888;
 }
 
 textarea.textarea {
-    color: #FFB997;
+    color: #ff8888;
 }
 
 .input::-webkit-input-placeholder { 
-  color: #FFB997;
+  color: #ff8888;
 }
 
 .select select::-webkit-input-placeholder { 
-  color: #FFB997;
+  color: #ff8888;
 }
 
 .textarea::-webkit-input-placeholder {
-  color: #FFB997;
+  color: #ff8888;
 }
 
 
