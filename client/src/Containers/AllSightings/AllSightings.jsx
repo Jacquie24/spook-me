@@ -24,7 +24,7 @@ const AllSightings = () => {
 				</section>
 				<div className="columns mt-5 is-multiline">
 					{sightings.map((sighting) => (
-						<div className="column is-one-fifth sight" key={sighting._id}>
+						<div className="column is-one-fourth sight" key={sighting._id}>
 							<div className="card">
 								<div className="card-image">
 									<figure className="image is-4by3">
