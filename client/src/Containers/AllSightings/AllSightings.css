@@ -1,0 +1,11 @@
+.sight {
+	background-color: #5e2b4a99 !important;
+    margin: 10px;
+}
+
+.title,
+.subtitle {
+	text-align: center;
+    color: #ff8888;
+}
+
