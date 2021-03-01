@@ -25,4 +25,5 @@
 	margin: 10px;
 	font-size: 39px;
 	width: 50%;
+	filter: drop-shadow(4px 4px 2px #0B032D)
 }

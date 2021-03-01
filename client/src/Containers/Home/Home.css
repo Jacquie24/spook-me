@@ -6,6 +6,7 @@
 .subtitle {
 	text-align: center;
     color: #ff8888;
+    filter: drop-shadow(4px 4px 2px #0B032D)
 }
 
 .recent{
