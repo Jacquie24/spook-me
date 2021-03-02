@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
-// import { useParams } from "react-router-dom";
 import axios from "axios";
+import "./SingleUser.css";
 
-//what will the single sighting container require:
-//take in the user id and display it to the page, it will use the params to pull the id from the url and use that to show the information.
-//what is this container going to be used for exactly
 
-// how will i seed the data, how did jonathan get his data into his single restaurant view?
 
 const SingleUser = () => {
   const history = useHistory();
   const [user, setUser] = useState({});
     const { id: userId } = useParams();
 
+    // Bring in user information pulled from userId
   useEffect(() => {
     axios
       .get(`/api/users/${userId}`)
@@ -25,7 +22,7 @@ const SingleUser = () => {
   }, [userId]);
 
   
-
+// Delete function
   const handleDeleteClick = (id) => {
     axios
       .delete(`/api/sightings/${id}`)
@@ -48,9 +45,9 @@ const SingleUser = () => {
       <div className="container mb-5 mt-5">
         <div className="card mb-5 mt-5 pt-5 pb-5">
           <header className="card-header" />
-          <p className="card-header-title">User Dashboard</p>
+          <p className="card-header-title is-centered">User Dashboard For:</p>
           <div className="card-content">
-            <div className="content">
+            <div className="content" id="userStyle">
               {user.username}
               {}
             </div>
@@ -60,7 +57,7 @@ const SingleUser = () => {
       <div className="container mb-5 mt-5">
         <div className="card mb-5 mt-5 pt-5 pb-5">
           <header className="card-header" />
-          <p className="card-header-title">All of your sightings</p>
+          <p className="card-header-title is-centered">Where have you been spooked?</p>
           <div className="card-content">
             <div className="content">
               <table className="table">
@@ -68,7 +65,7 @@ const SingleUser = () => {
                   <tr>
                     {/* <th>Picture</th> */}
                     <th>Title</th>
-                    {/* <th className="center-align">Image</th> */}
+                    <th>Image</th>
                     <th>City</th>
                     <th>State</th>
                     <th>Edit</th>
@@ -80,6 +77,10 @@ const SingleUser = () => {
                   {user?.sightings?.map((sighting) => (
                     <tr>
                       <td>{sighting.title}</td>
+                      <td><figure class="image is-96x96">
+                      <img src={sighting.imageUrl} alt={sighting.title} />
+</figure>
+</td>
                       <td>{sighting.city}</td>
                       <td>{sighting.state}</td>
                       <td>
