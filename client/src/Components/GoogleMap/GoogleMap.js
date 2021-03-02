@@ -5,21 +5,23 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import usePlacesAutocomplete, {
-  getGeocode,
-  getLatLng,
-} from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
-import { formatRelative } from "date-fns";
+// import { formatRelative } from "date-fns";
+
+// import usePlacesAutocomplete, {
+//   getGeocode,
+//   getLatLng,
+// } from "use-places-autocomplete";
+// import {
+//   Combobox,
+//   ComboboxInput,
+//   ComboboxPopover,
+//   ComboboxList,
+//   ComboboxOption,
+// } from "@reach/combobox";
+// import { formatRelative } from "date-fns";
 
 import "@reach/combobox/styles.css";
-import mapStyles from "./mapStyles";
+// import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -27,7 +29,7 @@ const mapContainerStyle = {
   width: "30vw",
 };
 const options = {
-  styles: mapStyles,
+//   styles: mapStyles,
   disableDefaultUI: true,
   zoomControl: true,
 };
@@ -36,7 +38,7 @@ const center = {
   lng: -84.387985,
 };
 
-export default function App() {
+ export default function GMap() {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries,
@@ -203,5 +205,3 @@ function Search({ panTo }) {
     </div>
   );
 }
-
-module.exports = GoogleMap;

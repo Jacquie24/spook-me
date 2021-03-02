@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import googleMap from "../../Components/GoogleMap/GoogleMap";
 // import "./SingleSighting.css";
 
 //what will the single sighting container require:
@@ -65,6 +66,8 @@ const SingleSighting = () => {
                       {sighting.city} <br></br>
                       {sighting.state} <br></br>
                       Google maps will probably go here.
+                      {googleMap}
+
                       {/* { sighting } */}
                     </div>
                   </div>
