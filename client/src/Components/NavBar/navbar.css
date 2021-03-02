@@ -1,18 +1,21 @@
 .navbar {
     background-color: #5e2b4a99 !important;
-
 }
 
 .navbar-item {
     color: #ff8888;
     filter: drop-shadow(4px 4px 2px #0B032D);
+    font-size: 18px;
 }
 
 .button {
     background-color: indianred;
+    font-family: 'Creepster', cursive !important;
+    padding-top: 8px;
+    font-size: 18px;
 }
 
 .spooky {
     padding-top: 8px;
-    font-size: 24px;
+    font-size: 46px;
 }
