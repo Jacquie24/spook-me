@@ -15,6 +15,10 @@ const Home = () => {
 				<div className="column">
 					<div className="container is-fluid">
 						<div className="notification is-primary contain">images carousel</div>
+					
+
+		
+
 					</div>
 					<br />
 					<div className="container is-fluid">
