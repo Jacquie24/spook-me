@@ -43,7 +43,7 @@ const NavBar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <button className="button">Log In</button>
+              <Link className="button" to="/login">Log In</Link>
               <Link className="button" to="/users/new">
                 Sign Up
               </Link>
