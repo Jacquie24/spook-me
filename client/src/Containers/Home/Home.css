@@ -6,12 +6,23 @@
 .subtitle {
 	text-align: center;
     color: #ff8888;
-    filter: drop-shadow(4px 4px 2px #0B032D)
+    filter: drop-shadow(4px 4px 2px #0B032D);
+    font-size: 48px;
 }
 
 .recent{
     width: 50% !important;
 }
 
+.card-content {
+    font-size: 27px;
+    padding-left: 12px;
+    padding-right: 6px;
+    color: #ff8888;
+    filter: drop-shadow(4px 4px 2px #0B032D);
+}
 
+.card {
+    background-color: #5e2b4a99 !important;
+}
 
