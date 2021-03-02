@@ -51,8 +51,9 @@ const SingleSighting = () => {
 								<div className="card mb-2">
 									<div className="card-content">
 										<div className="content">
-											{sighting.title} <br></br>
-											{sighting.description}
+											<p>{sighting.title}</p>
+											<p>{sighting.username}</p>
+											<p>{sighting.description}</p>
 										</div>
 									</div>
 								</div>
