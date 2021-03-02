@@ -35,8 +35,9 @@ const SingleSighting = () => {
 											<img src={sighting.imageUrl} alt={sighting.title} />
 										</figure>
 									</div>
-								</div><br></br>
-								<div className="card">
+								</div>
+								<br></br>
+								<div className="card address">
 									<div className="card-content">
 										<div className="content">
 											{sighting.address}, {sighting.city}, {sighting.state}{" "}
@@ -56,6 +57,16 @@ const SingleSighting = () => {
 									</div>
 								</div>
 								{/* this is the second card */}
+								<div className="card">
+									<div className="card-image">
+										<figure className="image is-4by3">
+											<img
+												src="http://www.400capital.com/wp-content/uploads/2014/02/map-placeholder.png"
+												alt={sighting.title}
+											/>
+										</figure>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
