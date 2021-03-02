@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import "./SingleUser.css";
+
+import Switch from "../../Components/Switch/Switch";
 
 
 
@@ -60,48 +62,8 @@ const SingleUser = () => {
           <p className="card-header-title is-centered">Where have you been spooked?</p>
           <div className="card-content">
             <div className="content">
-              <table className="table">
-                <thead className="table-head">
-                  <tr>
-                    {/* <th>Picture</th> */}
-                    <th>Title</th>
-                    <th>Image</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
-                  </tr>
-                </thead>
+              <Switch user={user} handleDeleteClick={handleDeleteClick} />
 
-                <tbody className="table-body">
-                  {user?.sightings?.map((sighting) => (
-                    <tr>
-                      <td>{sighting.title}</td>
-                      <td><figure class="image is-96x96">
-                      <img src={sighting.imageUrl} alt={sighting.title} />
-</figure>
-</td>
-                      <td>{sighting.city}</td>
-                      <td>{sighting.state}</td>
-                      <td>
-                        <Link to={`/sightings/${sighting._id}/edit`}>
-                          <button className="button">Edit</button>
-                        </Link>
-                      </td>
-                      <td>
-                        <button
-                          className="button"
-                          onClick={() => {
-                            handleDeleteClick(sighting._id);
-                          }}
-                        >
-                          Delete
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
