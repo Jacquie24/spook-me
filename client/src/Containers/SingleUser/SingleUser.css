@@ -1,0 +1,9 @@
+.card-header-title {
+    font-size: xx-large;
+    color: #0B032D;
+    filter: drop-shadow(4px 4px 2px #ff8888);
+}
+
+#userStyle {
+    font-size: xx-large;
+}
