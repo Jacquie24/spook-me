@@ -20,6 +20,7 @@
     padding-right: 6px;
     color: #ff8888;
     filter: drop-shadow(4px 4px 2px #0B032D);
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .card {
