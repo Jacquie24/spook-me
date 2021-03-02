@@ -17,6 +17,7 @@ const Login = () => {
         password,
       })
       .then((response) => {
+        sessionStorage.setItem("userId", response.data._id);
         console.log(response.data);
         history.push(`/users/${response.data._id}`);
       })
