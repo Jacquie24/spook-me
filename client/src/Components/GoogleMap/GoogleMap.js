@@ -23,8 +23,8 @@ import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
 const mapContainerStyle = {
-  height: "100vh",
-  width: "100vw",
+  height: "30vh",
+  width: "30vw",
 };
 const options = {
   styles: mapStyles,
@@ -32,8 +32,8 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: 43.6532,
-  lng: -79.3832,
+  lat: 33.748997,
+  lng: -84.387985,
 };
 
 export default function App() {
@@ -72,8 +72,8 @@ export default function App() {
     <div>
       <h1>
        Ghosts{" "}
-        <span role="img" aria-label="tent">
-          ⛺️
+        <span role="img" aria-label="Derelict">
+        🏚️
         </span>
       </h1>
 
