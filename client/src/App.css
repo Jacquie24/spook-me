@@ -1,29 +1,18 @@
-
-	/* body {
-		background-color: rgb(41, 43, 43);
-		background-image: url("https://image.freepik.com/free-vector/halloween-cobweb-wallpaper_23-2148652386.jpg");
-		background-repeat: no-repeat;
-		background-size: contain;
-		font-family: 'Creepster', cursive;
-	} */
-
-	body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background-color: rgb(41, 43, 43);
-  background-image:
-    url(https://image.freepik.com/free-vector/halloween-cobweb-wallpaper_23-2148652386.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Creepster', cursive;
+body {
+	font-family: "Creepster", cursive;
 }
 
-
-
-    
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-color: rgb(41, 43, 43);
+	background-image: url(https://image.freepik.com/free-vector/halloween-cobweb-wallpaper_23-2148652386.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
