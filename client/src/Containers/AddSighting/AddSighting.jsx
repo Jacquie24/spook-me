@@ -8,6 +8,8 @@ const AddSighting = () => {
   const handleFormSubmit = (e, formObject) => {
     e.preventDefault();
     const id = sessionStorage.getItem("userId")
+    const name = sessionStorage.getItem("userName")
+    formObject.username = name
     axios
       .post("/api/sightings/" + id, formObject)
       .then((response) => {
