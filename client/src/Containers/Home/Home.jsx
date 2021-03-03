@@ -4,7 +4,7 @@ import "./Home.css";
 import Map from "../../Components/GoogleMap/GoogleMap";
 
 const Home = () => {
-  return (
+	return (
 		<div>
 			<section className="section is-medium">
 				<h1 className="subtitle">Don't forget your Holy Water...</h1>
@@ -30,11 +30,16 @@ const Home = () => {
 				</section>
 				<br></br>
 			</div>
-			<div className="startBtns">
-				<button>Get Spook'd</button>
-				<button>Spook Others</button>
-			</div>
-			<Map />
+			<section className="section is-small">
+				<div className="startBtns">
+					<button>Get Spook'd</button>
+					<button>Spook Others</button>
+				</div>
+			</section>
+      <section className="section is-medium">
+         <h1 className="mapTitle">Visit a haunting not posted by our users!</h1>
+				<Map />
+			</section>
 		</div>
 	);
 };
