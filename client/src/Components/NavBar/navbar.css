@@ -13,9 +13,26 @@
     font-family: 'Creepster', cursive !important;
     padding-top: 8px;
     font-size: 18px;
+    color: #0B032D;
 }
 
 .spooky {
     padding-top: 8px;
     font-size: 46px;
+}
+
+a.navbar-item:hover {
+    background-color: #5e2b4a99;
+    color: #ff8888;
+}
+
+.button.is-link.is-outlined {
+    background-color: transparent;
+    border-color: #ff8888 !important;
+    color: #ff8888 !important;
+}
+
+.button.is-link.is-outlined:hover {
+    background-color: #ff8888 !important;
+    color: #5e2b4a99 !important;
 }

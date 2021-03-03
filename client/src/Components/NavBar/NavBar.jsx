@@ -64,10 +64,10 @@ const NavBar = ({ id, setId }) => {
                 </>
               ) : (
                 <>
-                  <Link className="button" to="/login">
+                  <Link className="button is-link is-outlined" to="/login">
                     Log In
                   </Link>
-                  <Link className="button" to="/users/new">
+                  <Link className="button is-link is-outlined" to="/users/new">
                     Sign Up
                   </Link>
                 </>
