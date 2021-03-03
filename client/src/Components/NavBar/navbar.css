@@ -21,7 +21,7 @@
     font-size: 46px;
 }
 
-a.navbar-item:hover {
+.navbar-item:hover {
     background-color: #5e2b4a99;
     color: #ff8888;
 }
