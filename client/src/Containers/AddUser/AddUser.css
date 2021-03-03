@@ -31,3 +31,7 @@ textarea.textarea {
 .textarea::-webkit-input-placeholder {
   color: #FFB997;
 }
+
+.button, .button-link {
+  background-color: black;
+}
