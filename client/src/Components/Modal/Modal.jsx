@@ -7,7 +7,9 @@ const Modal = ({ showModal, setShowModal }) => {
         <div className="modal is-active">
           <div className="modal-background"></div>
           <div className="modal-content">
-            Username or password is incorrect. Please try again.
+              <div className="box">
+            Username or password is incorrect. Please try again. <br></br>If you're a new user, click the SignUp button at the top of the page.
+            </div>
           </div>
           <button
             className="modal-close is-large"
