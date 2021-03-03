@@ -20,8 +20,8 @@
   border-radius: 10px;
   Font-size: 18px;
   color: black;
-  font-family: 'Creepster', cursive !important
-
+  overflow: visible, scroll;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .location-info ul {
