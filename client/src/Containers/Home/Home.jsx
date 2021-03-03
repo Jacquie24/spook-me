@@ -1,6 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "./Home.css";
+import Map from "../../Components/GoogleMap/GoogleMap";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
                     Ready to get spooked? Here you will find the most haunted
                     locations in America that you can visit yourself or use
                     other user stories to spook your guests out by the campfire.
+                    <Map />
                   </div>
                 </div>
               </div>
