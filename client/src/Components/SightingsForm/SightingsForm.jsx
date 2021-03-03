@@ -159,7 +159,7 @@ const SightingsForm = (props) => {
 					<div className="field is-grouped">
 						<div className="control">
 							<button
-								className="button is-link"
+								className="button"
 								onClick={(e) => {
 									props.handleFormSubmit(e, {
 										// username,
