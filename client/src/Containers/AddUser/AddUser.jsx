@@ -115,14 +115,14 @@ const AddUser = () => {
 								<div className="field is-grouped">
 									<div className="control">
 										<button
-											className="button is-link"
+											className="button"
 											onClick={handleFormSubmit}
 										>
 											Submit
 										</button>
 									</div>
 									<div className="control">
-										<button className="button is-link is-light">Cancel</button>
+										<button className="button link">Cancel</button>
 									</div>
 								</div>
 							</div>

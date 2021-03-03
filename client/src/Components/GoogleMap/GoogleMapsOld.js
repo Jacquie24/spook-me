@@ -2,10 +2,10 @@ import React from "react";
 import {
   GoogleMap,
   useLoadScript,
-  Marker,
-  InfoWindow,
+//   // Marker,
+//   // InfoWindow,
 } from "@react-google-maps/api";
-import { formatRelative } from "date-fns";
+// import { formatRelative } from "date-fns";
 
 // import usePlacesAutocomplete, {
 //   getGeocode,
@@ -18,7 +18,7 @@ import { formatRelative } from "date-fns";
 //   ComboboxList,
 //   ComboboxOption,
 // } from "@reach/combobox";
-import "@reach/combobox/styles.css";
+// import "@reach/combobox/styles.css";
 // import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
@@ -36,11 +36,12 @@ const center = {
   lng: -84.387985,
 };
 
- export default function GMap() {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-    libraries,
-  });
+ function GMap() {
+  // const GMap = () => {
+  // const { isLoaded, loadError } = useLoadScript({
+  //   googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+  //   libraries,
+  // });
   // const [markers, setMarkers] = React.useState([]);
   // const [selected, setSelected] = React.useState(null);
 
@@ -65,8 +66,8 @@ const center = {
   //   mapRef.current.setZoom(14);
   // }, []);
 
-  if (loadError) return "Error";
-  if (!isLoaded) return "Loading...";
+  // if (loadError) return "Error";
+  // if (!isLoaded) return "Loading...";
 
   return (
     <div>
@@ -80,15 +81,15 @@ const center = {
       <Locate panTo={panTo} />
       <Search panTo={panTo} /> */}
 
-      <GoogleMap
+      {/* <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
         zoom={8}
         center={center}
-        // options={options}
-        // onClick={onMapClick}
-        // onLoad={onMapLoad}
-      >
+        options={options}
+        onClick={onMapClick}
+        onLoad={onMapLoad}
+      > */}
         {/* {markers.map((marker) => (
           <Marker
             key={`${marker.lat}-${marker.lng}`}
@@ -123,11 +124,11 @@ const center = {
             </div>
           </InfoWindow>
         ) : null} */}
-      </GoogleMap>
+      {/* </GoogleMap> */} 
     </div>
   );
 }
-
+ 
 // function Locate({ panTo }) {
 //   return (
 //     <button
@@ -203,3 +204,4 @@ const center = {
 //     </div>
 //   );
 // }
+export default GMap;

@@ -6,7 +6,7 @@ import "./SightingsForm.css"
 const SightingsForm = (props) => {
   const { id } = useParams();
 
-  const [username, setUsername] = useState("");
+//   const [username, setUsername] = useState("");
   const [title, setTitle] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
@@ -20,7 +20,7 @@ const SightingsForm = (props) => {
         .get(`/api/sightings/${id}`)
         .then((response) => {
           console.log(response.data);
-          setUsername(response.data.username);
+        //   setUsername(response.data.username);
           setTitle(response.data.title);
           setAddress(response.data.address);
           setCity(response.data.city);
@@ -54,7 +54,7 @@ const SightingsForm = (props) => {
 		<div className="container">
 			<div className="columns">
 				<div className="column is-6 is-offset-3">
-					<div className="field">
+					{/* <div className="field">
 						
 						<div className="control">
 							<input
@@ -66,7 +66,7 @@ const SightingsForm = (props) => {
 								onChange={(e) => setUsername(e.target.value)}
 							/>
 						</div>
-					</div>
+					</div> */}
 
 					<div className="field">
 						<div className="control">
@@ -159,10 +159,10 @@ const SightingsForm = (props) => {
 					<div className="field is-grouped">
 						<div className="control">
 							<button
-								className="button is-link"
+								className="button"
 								onClick={(e) => {
 									props.handleFormSubmit(e, {
-										username,
+										// username,
 										title,
 										address,
 										city,

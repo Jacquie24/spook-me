@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import googleMap from "../../Components/GoogleMap/GoogleMap";
+import Map from "../../Components/GoogleMap/GoogleMaps";
 // import "./SingleSighting.css";
 
 //what will the single sighting container require:
@@ -62,10 +62,13 @@ const SingleSighting = () => {
 								<div className="card">
 									<div className="card-image">
 										<figure className="image is-4by3">
-											<img
+											{/* <img
 												src="http://www.400capital.com/wp-content/uploads/2014/02/map-placeholder.png"
 												alt={sighting.title}
-											/>
+											/> */}
+                      <div>
+                      <Map />
+                      </div>
 										</figure>
 									</div>
 								</div>

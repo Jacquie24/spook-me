@@ -18,6 +18,7 @@ const Login = () => {
       })
       .then((response) => {
         sessionStorage.setItem("userId", response.data._id);
+        sessionStorage.setItem("userName", username)
         console.log(response.data);
         history.push(`/users/${response.data._id}`);
       })
