@@ -7,7 +7,9 @@ const Home = () => {
 	return (
 		<div>
 			<section className="section is-medium">
-				<h1 className="subtitle">Don't forget your Holy Water...</h1>
+				<h1 className="subtitle">
+					<br></br>* USER BEWARE...YOU'RE IN FOR A SCARE! *<br></br>
+				</h1>
 			</section>
 
 			<div className="columns">
@@ -17,8 +19,6 @@ const Home = () => {
 							<div className="card">
 								<div className="card-content">
 									<div className="content">
-										* USER BEWARE...YOU'RE IN FOR A SCARE! *<br></br>
-										<br></br>
 										Ready to get spooked? Here you will find the most haunted
 										locations in America that you can visit yourself or use
 										other user stories to spook your guests out by the campfire.
@@ -32,12 +32,12 @@ const Home = () => {
 			</div>
 			<section className="section is-small">
 				<div className="startBtns">
-					<button>Get Spook'd</button>
-					<button>Spook Others</button>
+					<button className="button is-link is-outlined">Get Spook'd</button>
+					<button className="button is-link is-outlined">Spook Others</button>
 				</div>
 			</section>
-      <section className="section is-medium">
-         <h1 className="mapTitle">Visit a haunting not posted by our users!</h1>
+			<section className="section is-medium">
+				<h1 className="mapTitle">Visit a haunting not posted by our users!</h1>
 				<Map />
 			</section>
 		</div>

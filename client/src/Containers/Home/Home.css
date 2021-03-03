@@ -44,3 +44,20 @@ section.section.is-medium {
 	filter: drop-shadow(4px 4px 2px #0b032d);
 	font-size: 48px;
 }
+
+.section{
+	padding: 10px 15px 10px 15px !important;
+}
+
+.button.is-link.is-outlined {
+    background-color: transparent;
+    border-color: #ff8888 !important;
+    color: #ff8888 !important;
+	margin: 10px;
+}
+
+.button.is-link.is-outlined:hover {
+    background-color: #ff8888 !important;
+    color: #5e2b4a99 !important;
+	margin: 10px;
+}
