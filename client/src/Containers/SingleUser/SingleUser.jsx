@@ -44,11 +44,11 @@ const SingleUser = () => {
         height: "100vh",
       }}
     >
-      <div className="container mb-5 mt-5">
-        <div className="card mb-5 mt-5 pt-5 pb-5">
+      <div className="container mt-5">
+        <div className="card mb-5 mt-5 pt-3 pb-3">
           <header className="card-header" />
-          <p className="card-header-title is-centered">User Dashboard For:</p>
-          <div className="card-content">
+          <p className="card-header-title is-centered pb-1">User Dashboard For:</p>
+          <div className="card-content pt-1">
             <div className="content" id="userStyle">
               {user.username}
               {}

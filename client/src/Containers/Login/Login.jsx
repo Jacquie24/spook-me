@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   const history = useHistory();
 
   const [username, setUsername] = useState("");
@@ -18,9 +18,15 @@ const Login = () => {
       })
       .then((response) => {
         sessionStorage.setItem("userId", response.data._id);
-        sessionStorage.setItem("userName", username)
+        sessionStorage.setItem("userName", username);
         console.log(response.data);
-        history.push(`/users/${response.data._id}`);
+        if (response.data._id) {
+          props.setId(response.data._id);
+          history.push(`/users/${response.data._id}`);
+        } else {
+          //TODO: Modals, toasts, NOT javascript alerts.
+          // But tell the user login didn't work.
+        }
       })
       .catch((err) => {
         console.log(err);

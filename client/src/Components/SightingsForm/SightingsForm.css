@@ -29,4 +29,15 @@ button.is-link {
   font-size: 18px !important;
 }
 
+.button.is-link.is-outlined {
+  background-color: transparent;
+  border-color: #ff8888 !important;
+  color: #ff8888 !important;
+}
+
+.button.is-link.is-outlined:hover {
+  border-color: #ff8888 !important;
+  color: #5e2b4a99 !important;
+}
+
 
