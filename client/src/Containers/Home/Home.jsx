@@ -33,7 +33,7 @@ const Home = () => {
 			<section className="section is-small">
 				<div className="startBtns">
 					<Link className="button is-link is-outlined" to="/sightings">Get Spook'd</Link>
-					<Link className="button is-link is-outlined" to="/sighings/new">Spook Others</Link>
+					<Link className="button is-link is-outlined" to="/sightings/new">Spook Others</Link>
 				</div>
 			</section>
 			<section className="section is-medium">

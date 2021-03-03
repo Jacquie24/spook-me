@@ -5,9 +5,9 @@
 .title,
 .subtitle {
 	text-align: center;
-	color: #ff8888;
-	filter: drop-shadow(4px 4px 2px #0b032d);
 	font-size: 48px;
+    color: #0B032D;
+    filter: drop-shadow(4px 4px 2px #ff8888);
 }
 
 .recent {
@@ -15,7 +15,7 @@
 }
 
 .card-content {
-	font-size: 27px;
+	font-size: 20px;
 	padding-left: 12px;
 	padding-right: 6px;
 	color: #ff8888;
@@ -35,7 +35,8 @@ section.section.is-medium {
 	width: unset !important;
 }
 
-.mapTitle, .startBtns {
+
+.startBtns {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -43,6 +44,15 @@ section.section.is-medium {
 	color: #ff8888;
 	filter: drop-shadow(4px 4px 2px #0b032d);
 	font-size: 48px;
+}
+.mapTitle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+	font-size: 48px;
+    color: #0B032D;
+    filter: drop-shadow(4px 4px 2px #ff8888);
 }
 
 .section{
