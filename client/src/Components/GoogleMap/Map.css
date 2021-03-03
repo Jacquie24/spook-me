@@ -1,5 +1,5 @@
 .map {
-  width: 35vw;
+  width: 60vw;
   height: 35vw;
   position: relative;
 }
@@ -9,6 +9,29 @@
   color: red;
 }
 
+.location-info {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  Font-size: 18px;
+  color: black;
+
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.loaction-info li {
+  padding: 5px 0;
+
+}
 /* .google-map {
   width: 100%;
   height: 60vh;
