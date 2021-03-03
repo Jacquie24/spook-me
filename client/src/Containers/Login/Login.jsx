@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import Modal from "../../Components/Modal/Modal";
+import "./Login.css";
 
 const Login = (props) => {
   const history = useHistory();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log("this is firing");
+
     axios
       .post("/api/login", {
         username,
@@ -24,6 +27,10 @@ const Login = (props) => {
           props.setId(response.data._id);
           history.push(`/users/${response.data._id}`);
         } else {
+          setShowModal(true);
+
+          // const active = this.state.modal ? "is-active" : "";
+
           //TODO: Modals, toasts, NOT javascript alerts.
           // But tell the user login didn't work.
         }
@@ -69,6 +76,7 @@ const Login = (props) => {
           </button>
         </p>
       </div>
+      <Modal showModal={showModal} setShowModal={setShowModal}/>
     </div>
   );
 };
