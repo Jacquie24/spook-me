@@ -11,7 +11,7 @@ import LocationInfoBox from "./LocationInfoBox";
 
 
 
-const Map = ({ center, zoom }) => {
+const Map = ({ center, zoom, props }) => {
   const [locationInfo, setLocationInfo] = useState(null);
 
   return (
@@ -34,7 +34,7 @@ const Map = ({ center, zoom }) => {
         <LocationMarker lat={center.lat} lng={center.lng} />
 
       </GoogleMapReact>
-      {locationInfo && <LocationInfoBox info={locationInfo} />}
+      <LocationInfoBox locationInfo={locationInfo} setLocationInfo = {setLocationInfo} />
     </div>
   )
 }
