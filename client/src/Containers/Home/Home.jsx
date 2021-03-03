@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Map from "../../Components/GoogleMap/GoogleMap";
 
@@ -32,8 +32,8 @@ const Home = () => {
 			</div>
 			<section className="section is-small">
 				<div className="startBtns">
-					<button className="button is-link is-outlined">Get Spook'd</button>
-					<button className="button is-link is-outlined">Spook Others</button>
+					<Link className="button is-link is-outlined" to="/sightings">Get Spook'd</Link>
+					<Link className="button is-link is-outlined" to="/sighings/new">Spook Others</Link>
 				</div>
 			</section>
 			<section className="section is-medium">
