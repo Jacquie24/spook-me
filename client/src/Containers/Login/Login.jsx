@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import "./Login.css"
 
 const Login = (props) => {
   const history = useHistory();
@@ -33,7 +34,7 @@ const Login = (props) => {
       });
   };
   return (
-    <div>
+    <div className="loginForm">
       <div className="field">
         <p className="control has-icons-right">
           <input
