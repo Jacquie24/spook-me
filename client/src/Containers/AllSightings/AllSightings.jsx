@@ -36,8 +36,8 @@ const AllSightings = () => {
 								<div className="card-content">
 									<div className="media">
 										<div className="media-content is-centered mb-1">
-											<p className="title is-4">{sighting.title}</p>
-											<p className="subtitle is-6">{sighting.username}</p>
+											<p className="title is-4 spookName">{sighting.title}</p>
+											<p className="subtitle is-6 spookSubName">{sighting.username}</p>
 										</div>
 									</div>
 
