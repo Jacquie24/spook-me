@@ -1,10 +1,13 @@
 .card-header-title {
-    font-size: 48px;
+  text-align: center;
+	font-size: 48px;
     color: #0B032D;
     filter: drop-shadow(4px 4px 2px #ff8888);
 }
 
 #userStyle {
-    font-size: 48px;
-    color:#FFB997;
+   text-align: center;
+	font-size: 48px;
+    color: #0B032D;
+    filter: drop-shadow(4px 4px 2px #ff8888);
 }
