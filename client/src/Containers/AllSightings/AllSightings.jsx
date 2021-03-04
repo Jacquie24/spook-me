@@ -45,7 +45,7 @@ const AllSightings = () => {
 										{sighting.address} <br></br>
 										{sighting.city}, {sighting.state}
 										<br></br>
-										<Link to={`/sightings/${sighting._id}`}>Tell Me More</Link>
+										<Link to={`/sightings/${sighting._id}`}>Spook Me More</Link>
 									</div>
 								</div>
 							</div>
