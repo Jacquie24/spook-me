@@ -1,4 +1,4 @@
-
+import "./LocationInfoBox.css"
 const LocationInfoBox = ({ info }) => {
     return (
         <div className="location-info">
