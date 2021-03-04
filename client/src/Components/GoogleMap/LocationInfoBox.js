@@ -1,5 +1,8 @@
 
+import "./LocationInfoBox.css"
+
 const LocationInfoBox = ({ locationInfo, setLocationInfo }) => {
+
     return (
         <div>
             {locationInfo && (

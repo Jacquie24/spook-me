@@ -1,38 +1,45 @@
 .navbar {
-    background-color: #5e2b4a99 !important;
+	background-color: #5e2b4a99 !important;
 }
 
 .navbar-item {
-    color: #ff8888;
-    filter: drop-shadow(4px 4px 2px #0B032D);
-    font-size: 18px;
+	color: #ff8888;
+	filter: drop-shadow(4px 4px 2px #0b032d);
+	font-size: 18px;
 }
 
 .button {
-    background-color: indianred;
-    font-family: 'Creepster', cursive !important;
-    padding-top: 8px;
-    font-size: 18px;
-    color: #0B032D;
+	background-color: indianred;
+	font-family: "Creepster", cursive !important;
+	padding-top: 8px;
+	font-size: 18px;
+	color: #0b032d;
 }
 
 .spooky {
-    padding-top: 8px;
-    font-size: 46px;
+	padding-top: 8px;
+	font-size: 46px;
 }
 
-.navbar-item:hover {
-    background-color: #5e2b4a99;
-    color: #ff8888;
+
+a.navbar-item:hover {
+	background-color: unset !important;
+	color: #8d5477;
 }
 
 .button.is-link.is-outlined {
-    background-color: transparent;
-    border-color: #ff8888 !important;
-    color: #ff8888 !important;
+	background-color: transparent;
+	border-color: #ff8888 !important;
+	color: #ff8888 !important;
 }
 
 .button.is-link.is-outlined:hover {
-    background-color: #ff8888 !important;
-    color: #5e2b4a99 !important;
+	background-color: #ff8888 !important;
+	color: #8d5477;
+}
+
+a.navbar-item:focus-within {
+	background-color: transparent !important;
+	color: #0b032d;
+	filter: drop-shadow(4px 4px 2px #ff8888);
 }

@@ -40,45 +40,53 @@ const Login = (props) => {
       });
   };
   return (
-    <div>
-      <div className="field">
-        <p className="control has-icons-right">
-          <input
-            className="input"
-            type="username"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          ></input>
-          <span className="icon is-small is-right">
-            <i className="fas fa-check"></i>
-          </span>
-        </p>
-      </div>
-      <div className="field">
-        <p className="control has-icons-left">
-          <input
-            className="input"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></input>
-          <span className="icon is-small is-left">
-            <i className="fas fa-lock"></i>
-          </span>
-        </p>
-      </div>
-      <div className="field">
-        <p className="control">
-          <button className="button is-success" onClick={handleFormSubmit}>
-            Login
-          </button>
-        </p>
-      </div>
-      <Modal showModal={showModal} setShowModal={setShowModal}/>
-    </div>
-  );
+
+		<div className="formContainer">
+			<section className="section is-small">
+				<h1 className="page-title">All The Spooks...</h1>
+			</section>
+			<section className="section is-small">
+				<div className="loginForm">
+					<div className="field">
+						<p className="control has-icons-right">
+							<input
+								className="input"
+								type="username"
+								placeholder="Username"
+								value={username}
+								onChange={(e) => setUsername(e.target.value)}
+							></input>
+							<span className="icon is-small is-right">
+								<i className="fas fa-check"></i>
+							</span>
+						</p>
+					</div>
+					<div className="field">
+						<p className="control has-icons-left">
+							<input
+								className="input"
+								type="password"
+								placeholder="Password"
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
+							></input>
+							<span className="icon is-small is-left">
+								<i className="fas fa-lock"></i>
+							</span>
+						</p>
+					</div>
+					<div className="field">
+						<p className="control">
+							<button className="button is-link is-outlined" onClick={handleFormSubmit}>
+								Login
+							</button>
+						</p>
+          </div>
+          <Modal showModal={showModal} setShowModal={setShowModal}/>
+				</div>
+			</section>
+		</div>
+	);
 };
 
 export default Login;
