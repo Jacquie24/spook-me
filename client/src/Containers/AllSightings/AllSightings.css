@@ -11,7 +11,8 @@
 .spookName,
 .spookSubName{
 	text-align: center;
-	color: #ff8888;
+	color: #ff8888 !important;
+	filter: drop-shadow(4px 4px 2px #0B032D) !important;
 }
 
 .card {
