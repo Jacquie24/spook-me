@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 // import "./SingleSighting.css";
 
 //what will the single sighting container require:
@@ -57,6 +58,13 @@ const SingleSighting = () => {
 										</div>
 									</div>
 								</div>
+								<Link className="button mr-3" to="/sightings">
+									View All Sightings
+								</Link>
+								<Link className="button" to="/sightings/new">
+									Add A Sighting
+								</Link>
+
 								{/* this is the second card */}
 								
 							</div>

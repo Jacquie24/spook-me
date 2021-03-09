@@ -30,19 +30,20 @@ const SingleUser = () => {
       .delete(`/api/sightings/${id}`)
       .then((response) => {
         console.log(response.data);
-        history.go(0);
+        history.go();
       })
       .catch((err) => {
         console.log(err);
       });
+      
   };
 
   return (
     <div
-      style={{
-        backgroundImage: `url("https://wallpapertag.com/wallpaper/full/a/c/a/346463-spooky-background-1920x1080-hd-for-mobile.jpg")`,
-        height: "100vh",
-      }}
+      // style={{
+      //   backgroundImage: `url("https://wallpapertag.com/wallpaper/full/a/c/a/346463-spooky-background-1920x1080-hd-for-mobile.jpg")`,
+      //   height: "100vh",
+      // }}
     >
       <div className="container mt-5">
         <div className="card mb-5 mt-5 pt-3 pb-3">

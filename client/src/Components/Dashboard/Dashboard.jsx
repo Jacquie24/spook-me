@@ -8,21 +8,21 @@ const Dashboard = (props) => {
       <table className="table">
         <thead className="table-head">
           <tr>
-            <th style={{ color: "whitesmoke" }}>Title</th>
-            <th style={{ color: "whitesmoke" }}>Photo</th>
-            <th style={{ color: "whitesmoke" }}>City</th>
-            <th style={{ color: "whitesmoke" }}>State</th>
-            <th style={{ color: "whitesmoke" }}>Edit</th>
-            <th style={{ color: "whitesmoke" }}>Delete</th>
+            <th>Title</th>
+            <th>Photo</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Edit</th>
+            <th>Delete</th>
           </tr>
         </thead>
 
         <tbody className="table-body">
           {props.user?.sightings?.map((sighting) => (
-            <tr>
-              <td>{sighting.title}</td>
+            <tr key={sighting._id}>
+              <td><Link to={`/sightings/${sighting._id}`} className="sightingLink">{sighting.title}</Link></td>
               <td>
-                <figure class="image is-96x96">
+                <figure className="image is-96x96">
                   <img src={sighting.imageUrl} alt={sighting.title} />
                 </figure>
               </td>
