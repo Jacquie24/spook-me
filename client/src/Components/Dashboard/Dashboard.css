@@ -1,8 +1,16 @@
+th {
+    color: whitesmoke !important;
+}
+
 .table {
     background-color: #0B032D;
+    color: whitesmoke !important;
+}
+
+.sightingLink {
     color: whitesmoke;
 }
 
-th {
-    color: whitesmoke;
+.sightingLink:hover {
+    color: #ff8888 !important;
 }
