@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./SingleUser.css";
 
@@ -8,7 +8,7 @@ import Switch from "../../Components/Switch/Switch";
 
 
 const SingleUser = () => {
-  const history = useHistory();
+
   const [user, setUser] = useState({});
     const { id: userId } = useParams();
 
@@ -30,13 +30,22 @@ const SingleUser = () => {
       .delete(`/api/sightings/${id}`)
       .then((response) => {
         console.log(response.data);
-        history.go();
+        axios
+      .get(`/api/users/${userId}`)
+      .then((response) => {
+        console.log(response);
+        setUser(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
       })
       .catch((err) => {
         console.log(err);
       });
       
-  };
+  });
+};
+
 
   return (
     <div
